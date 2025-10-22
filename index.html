@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formluarz</title>
+</head>
+<body>
+
+  <h2>Formluarz</h2>
+
+  <form action="/submit" method="POST">
+
+    <label for="imie">Imię:</label><br>
+    <input type="text" id="imie" name="imie"><br><br>
+
+    <label for="wiek">Wiek:</label><br>
+    <input type="number" id="wiek" name="wiek"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="haslo">Hasło:</label><br>
+    <input type="password" id="haslo" name="haslo"><br><br>
+
+    <p>Płeć:</p>
+    <input type="radio" id="kobieta" name="plec" value="kobieta">
+    <label for="kobieta">Kobieta</label><br>
+    <input type="radio" id="mezczyzna" name="plec" value="mezczyzna" checked>
+    <label for="mezczyzna">Mężczyzna</label><br><br>
+
+    <input type="checkbox" id="Czerwony" name="kolor" value="Czerwony">
+    <label for="Czerwony">Czerwony</label><br>
+
+    <input type="checkbox" id="Zielony" name="kolor" value="Zielony">
+    <label for="Zielony">Zielony</label><br></br>
+
+    <select name="Opcje">
+    <option value="Niebieski">Niebieski</option>
+    <option value="Pomarańczowy">Pomarańczowy</option>
+    <option value="fioletowy">fioletowy</option></select><br><br>
+
+    <input type="checkbox" id="zgoda" name="zgoda" value="tak" checked>
+    <label for="zgoda">Akceptuję regulamin</label><br><br>
+
+    <input type="hidden" name="user_id" value="12345">
+    <input type="reset" value="Wyczyść">
+    <input type="submit" value="Wyślij formularz">
+
+  </form>
+
+</body>
+</html>
